@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+.SurukleIco
+		{
+			cursor: move;
+		}
+
+        .paragraf
+		{
+			color:yellow; /*aquamarine*/
+            display:inline-block;
+            font-family: sans-serif; 
+            font-weight:bold; 
+		}
+
+        .checked {
+            color:cornsilk !important;
+            text-decoration: line-through;
+        }
+        .itemss{
+                 /*itemss classına sahip dive genişlik ve yükseklik vermediğimiz için
+                            veri ekledikçe genişliği ve yüksekliği artar*/
+            
+            padding: 20px;
+            
+             position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -300px;
+            margin-top: -80px;
+            border:2px solid black;
+            text-align: center;
+            box-shadow: 10px 10px 20px 2px; 
+            border-radius: 15%;
+        }
+        body{
+            background-image: url(../css/resim/background.jpg);
+            background-repeat:no-repeat; /*resmi arka plana sıgdırmak için bu ve alttaki css i yazdık*/
+            background-size: cover;
+        }
+        .ust{
+            margin-left: 500px;
+           
+        }
+        .btn{
+             padding-right: 15px; 
+             margin-top: -4px; /*üstten -4 px bosluk bıraktık*/ 
+             text-align: center;
+             font-size: 15px;
+             padding: 4px 6px;
+             margin-right: 4px;
+        }
+        .vr { /*çizgi çektik yatay bir şekilde*/
+            margin-top: 7px; 
+             border-top: 2px solid #000;
+            }
+         .vrr { /*çizgi çektik yatay bir şekilde döngü içinde kullanıyoruz*/
+             margin-bottom: 20px; 
+             border-top: 2px solid #000;
+            }
+
+            .sortable { 
+                list-style-type: none;
+                }
+            .yazi{
+                font-family: 'Brush Script MT', Fantasy;
+            }
+            
