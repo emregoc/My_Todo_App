@@ -14,4 +14,4 @@ todolist.php sayfasındaki update fonksiyonuna gelen id ye göre , değiştirilm
 
 ---- Tüm tasarım baştan sona css ve bootstrap ile uğraşılarak yapıldı
 
----- Tasarım kısmında Yapılan tüm işlemler tek tek yazıldı.
+---- Son eklenen veri ilk sıraya yerleştirildi.
