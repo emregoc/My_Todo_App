@@ -70,14 +70,14 @@ $todolist = $app->getTodos();
     </div>
 
 
-    <div class="surukle sortable">
+    <ul id="suruklee">
     
     <?php
     $k=0;
     foreach($todolist as $k=>$v){
         echo '    
         
-            <li class="">
+            <li id="sira-'.($k+1).'">
             
              <h4 class="" style="display:inline-block"> ----> </h4> 
             
@@ -103,7 +103,8 @@ $todolist = $app->getTodos();
     '<div class="vrr"></div>'
     ?>
     
-</div>
+    </ul>
+    
 </div>
 
      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>

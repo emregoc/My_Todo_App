@@ -1,5 +1,9 @@
 <?php
 
+$gelen = isset($_POST['sira']);
+
+
+//var_dump($gelen); 
 
 class TodoList {
 

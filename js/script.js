@@ -1,17 +1,38 @@
 $(document).ready(function(){
 
-    $(".paragraf").click(function(){ // paragraf etiketli div'e tıklandıgında içinde butonda var
-                                     // paragraf etiketinin yanına checked etiketi ekliyor
-                                     // ve bu sayede çizimlerin üstü çiziliyor
-        $(this).addClass("checked"); // burdaki this'in anlamı o etiketi aldıgımızı gösterir
-                                     // yani paragraf etiketi
+    $(".paragraf").click(function(){ 
+        $(this).addClass("checked"); 
        
         
             
    });
 });
 
-$( function() {
-         $( ".surukle" ).sortable();
-        $( ".surukle" ).disableSelection();
- } );
+$(document).ready(function() {
+    $( "#suruklee" ).sortable({
+
+        
+       // event, ui
+       update: function (){
+
+                   var deger = $(this).sortable('serialize');
+                 
+           // alert(deger);
+                  $.ajax({
+                       url:"todolist.php",
+                       data: deger,
+                       type:"POST",
+                       success: function(basarili){
+                           console.log("başarılı");
+                           console.log(basarili);
+                           $("#sonuc").html(basarili);
+                       }
+                   })
+
+           }
+
+
+
+    });
+   
+} );
